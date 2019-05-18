@@ -1,9 +1,11 @@
 import React from 'react';
 
 import './Style.css'
-function App() {
+class App extends React.Component {
+
+    render() {
     return (
-        <body className="logon">
+        <body className="logon " >
             <div id="login">
                 <form name='form-login'>
                     <span className="fontawesome-user"></span>
@@ -21,5 +23,5 @@ function App() {
         </body>
     )
 }
-
+}
 export default App;

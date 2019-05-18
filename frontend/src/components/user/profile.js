@@ -1,23 +1,53 @@
 import React from 'react';
-import './css/home.css'
-import './css/style.css'
-function App() {
-    return (
-        <div id="login">
-            <form name='form-login'>
-                <span className="fontawesome-user"></span>
-                <input type="text" id="user" placeholder="Username" />
-                <span className="fontawesome-email"></span>
-                <input type="text" id="user" placeholder="Email" />
-                <span className="fontawesome-lock"></span>
-                <input type="password" id="pass" placeholder="Password" />
-                <span className="fontawesome-lock"></span>
-                <input type="password" id="pass" placeholder="Re-type Password"/><br/>
-                <input type="submit" value="Register" />
-                <b style={{ color: "aliceblue; " }}> Am a Member <a href="login.html">Login here</a></b>
-            </form>
-        </div>
-    )
-}
+// import './Style.css';
+import './Home.css'
+class App extends React.Component {
 
+    render() {
+        return (
+
+            <body className="logon">
+                <div className="topnav" id="myTopnav">
+                    <a href="./homepage.html" className="">Home</a>
+                    <a href="./userprofile.html" className="active">Profile</a>
+                    <a href="javascript:void(0);" className="icon" onclick="myFunction()">Sign_Out
+                      <i className="fa fa-bars"></i>
+                    </a>
+                </div>
+                <div>
+
+                    <div className="row">
+                        <div className="column" style={{ backgroundColor: "#aaa" }}>
+                            <div className="card">
+                                <img src="./images/av.png" alt="John" style={{ width: "100%" }} />
+                                <h1>John Doe</h1>
+
+                                <p>Last Location : Kinondoni</p>
+                                <p>Last Driver : Juma Kaseja</p>
+                                <div style={{ margin: " 24px 0" }}>
+                                    <a href="#"><i ClassName="fa fa-dribbble"></i></a>
+                                    <a href="#"><i ClassName="fa fa-twitter"></i></a>
+                                    <a href="#"><i ClassName="fa fa-linkedin"></i></a>
+                                    <a href="#"><i ClassName="fa fa-facebook"></i></a>
+                                </div>
+                                <p><button>EDIT PROFILE !</button></p>
+                            </div>
+                        </div>
+                        <div className="column" style={{ backgroundColor: "#aaa" }}>
+                            <div ClassName="card">
+                                number ofride the user has given
+                                    </div>
+                        </div>
+                        <div className="column" style={{ backgroundColor: "#aaa" }}>
+                            <div className="card">
+                                number of rides the user taken
+                                                    </div>
+
+                        </div>
+                     </div>
+                </div>             
+             </body>
+                    )
+                }
+            }
 export default App;

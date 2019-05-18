@@ -7,11 +7,12 @@
   background-image: url("images/car-share-3.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size:cover;
   position: relative;
   height:100%;
-  background-color: #373e44;
-  color: #212224;
+  min-height:100%;
+  /* background-color: #373e44; */
+  /* color: #212224; */
   font: 87.5%/1.5em 'Open Sans', sans-serif;
   margin: 0;
   

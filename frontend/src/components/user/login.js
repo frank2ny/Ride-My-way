@@ -3,7 +3,7 @@ import './Style.css';
 function App() {
     return (
         <body className="logon">
-        <div id="logon">
+        <div id="login">
             
             <form name='form-login'>
                 <span className="fontawesome-user"></span>
