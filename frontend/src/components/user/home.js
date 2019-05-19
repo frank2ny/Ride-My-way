@@ -13,8 +13,8 @@ class App extends React.Component {
             <a href="./userprofile.html" className="">Profile</a>
             <a href="#" className="" style={{ float: "right" }}>Sign_Out</a>
 
-            <a href="javascript:void(0);" className="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
+            <a href="javascript:void(0);" className="icon" onClick="myFunction()">
+                <i className="fa fa-bars"></i>
             </a>
         </div>
 

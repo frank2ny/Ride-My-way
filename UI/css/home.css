@@ -2,7 +2,7 @@
   * {
     box-sizing: border-box;
   }
-  
+  @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
   /* Create three equal columns that floats next to each other */
   .column {
     float: left;
