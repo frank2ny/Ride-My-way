@@ -13,7 +13,7 @@ class App extends React.Component {
                 {/* <div className="topnav" id="myTopnav">
                     <a href="./homepage.html" className="">Home</a>
                     <a href="./userprofile.html" className="active">Profile</a>
-                    <a href="javascript:void(0);" className="icon" onclick="myFunction()">Sign_Out
+                    <a >Sign_Out
                       <i className="fa fa-bars"></i>
                     </a>
                 </div> */}
