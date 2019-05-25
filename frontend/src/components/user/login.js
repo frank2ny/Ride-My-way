@@ -1,21 +1,33 @@
 import React from 'react';
-import './Style.css';
+import './css/style.css';
+
 function App() {
     return (
-        <body className="logon">
-        <div id="login">
-            
-            <form name='form-login'>
-                <span className="fontawesome-user"></span>
-                <input type="text" id="user" placeholder="Username" />
-                <span className="fontawesome-lock"></span>
-                <input type="password" id="pass" placeholder="Password"/>
-                    <input type="submit" value="Login"/>
-                        <a href="singup.html" style={{color:"aliceblue" }}>Register here</a>
-        </form>
+        <div id="login-box">
+        <div class="left">
+          <h1>Sign up</h1>
+          
+          <input type="text" name="username" placeholder="Username" />
+          <input type="text" name="email" placeholder="E-mail" />
+          <input type="password" name="password" placeholder="Password" />
+          <input type="password" name="password2" placeholder="Retype password" />
+          
+          <input type="submit" name="signup_submit" value="Sign me up" />
+        </div>
         
-    </div>
-    </body>           );
-              }
-              
-              export default App;
+        <div class="right">
+          <span class="loginwith">Sign in with<br />social network</span>
+          
+          <button class="social-signin facebook">Log in with facebook</button>
+          <button class="social-signin twitter">Log in with Twitter</button>
+          <button class="social-signin google">Log in with Google+</button>
+        </div>
+        <div class="or">OR</div>
+      </div>
+        
+        
+      
+    );
+}
+
+export default App;

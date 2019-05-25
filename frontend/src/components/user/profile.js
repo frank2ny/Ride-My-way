@@ -1,19 +1,22 @@
 import React from 'react';
 // import './Style.css';
 import './Home.css'
+import Menu from './menu';
 class App extends React.Component {
 
     render() {
         return (
-
+            <div>
+            <Menu />
             <body className="logon">
-                <div className="topnav" id="myTopnav">
+
+                {/* <div className="topnav" id="myTopnav">
                     <a href="./homepage.html" className="">Home</a>
                     <a href="./userprofile.html" className="active">Profile</a>
                     <a href="javascript:void(0);" className="icon" onclick="myFunction()">Sign_Out
                       <i className="fa fa-bars"></i>
                     </a>
-                </div>
+                </div> */}
                 <div>
 
                     <div className="row">
@@ -44,10 +47,10 @@ class App extends React.Component {
                                                     </div>
 
                         </div>
-                     </div>
-                </div>             
-             </body>
-                    )
-                }
-            }
+                    </div>
+                </div>
+            </body>
+            </div>        )
+    }
+}
 export default App;

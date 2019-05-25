@@ -1,27 +1,28 @@
 import React from 'react';
 
-import './Style.css'
-class App extends React.Component {
-
-    render() {
+import './css/style.css'
+function App(){
     return (
-        <body className="logon " >
-            <div id="login">
-                <form name='form-login'>
-                    <span className="fontawesome-user"></span>
-                    <input type="text" id="user" placeholder="Username" />
-                    <span className="fontawesome-email"></span>
-                    <input type="text" id="user" placeholder="Email" />
-                    <span className="fontawesome-lock"></span>
-                    <input type="password" id="pass" placeholder="Password" />
-                    <span className="fontawesome-lock"></span>
-                    <input type="password" id="pass" placeholder="Re-type Password" /><br />
-                    <input type="submit" value="Register" />
-                    <b style={{ color: "aliceblue; " }}> Am a Member <a href="login.html">Login here</a></b>
-                </form>
-            </div>
-        </body>
+        <div id="login-box">
+        <div class="left">
+          <h1>Log in</h1>        
+ 
+          <input type="text" name="email" placeholder="E-mail" />
+          <input type="password" name="password" placeholder="Password" />
+          <input type="submit" name="signup_submit" value="Sign in" />
+        </div>
+        
+        <div class="right">
+          <span class="loginwith">Sign in with<br />social network</span>
+          
+          <button class="social-signin facebook">Log in with facebook</button>
+          <button class="social-signin twitter">Log in with Twitter</button>
+          <button class="social-signin google">Log in with Google+</button>
+        </div>
+        <div class="or">OR</div>
+      </div>
+        
     )
 }
-}
+
 export default App;
