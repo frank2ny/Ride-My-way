@@ -2,17 +2,18 @@ const http = require('http');
 const express = require('express');
 
 var bodyParser = require("body-parser");
-const itemsRouter = require('./router/app');
+const rideRouter = require('./router/app');
 
 const app = express();
-
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
-
-
 app.use(express.json());
-
-app.use('/rides', itemsRouter);
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use((req, res, next) => {
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    res.setHeader('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content, Accept, Content-Type, Authorization');
+    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, PATCH, OPTIONS');
+    next();
+  });
+app.use('/rides', rideRouter);
 
 app.use('/', function(req, res) {
     res.send('Ride my way API');
