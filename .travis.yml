@@ -1,7 +1,7 @@
 language: node_js
 node_js:
-  - "8"
+  - "12"
 cache: npm
 
 script:
-  - cd backend && npm install && npm run test
+  - cd backend && npm install && npm test
