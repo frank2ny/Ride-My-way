@@ -2,7 +2,8 @@ const http = require('http');
 const express = require('express');
 
 var bodyParser = require("body-parser");
-const rideRouter = require('./router/app');
+const rideRouter = require('./router/ride');
+const user = require('./router/user');
 
 const app = express();
 app.use(express.json());
@@ -14,6 +15,7 @@ app.use((req, res, next) => {
     next();
   });
 app.use('/rides', rideRouter);
+app.use('/user', user);
 
 app.use('/', function(req, res) {
     res.send('Ride my way API');
