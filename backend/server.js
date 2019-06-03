@@ -4,7 +4,7 @@ const express = require('express');
 var bodyParser = require("body-parser");
 const rideRouter = require('./router/ride');
 const user = require('./router/user');
-
+var jwt    = require('jsonwebtoken');
 const app = express();
 app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: true }));
