@@ -6,7 +6,7 @@ app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 
-app.post('/users',user.register);
-app.get('/users',user.allusers);
+app.post('/',user.register);
+app.get('/',user.allusers);
 
 module.exports = app;

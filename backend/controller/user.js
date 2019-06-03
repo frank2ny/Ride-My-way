@@ -1,9 +1,10 @@
 const pool = require('../model/db');
+
     const register = (request, response) => {
         
         const { name, email , password,created_date=new Date(),modified_date=new Date() } = request.body
       
-        pool.query('INSERT INTO users(email,name,password,created_date,modified_date) VALUES ($1, $2, $3,$4,$5)', [email,name, password,created_date,modified_date], (error, results) => {
+        pool.query('INSERT INTO users(name,email,password,created_date,modified_date) VALUES ($1, $2, $3,$4,$5)', [name,email, password,created_date,modified_date], (error, results) => {
             if (error) {
                 throw error
               }

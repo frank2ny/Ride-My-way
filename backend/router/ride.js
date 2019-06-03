@@ -1,11 +1,10 @@
 const express = require('express');
-
-const user =require('../controller/user');
+const pool =require('../controller/rides');
 var bodyParser = require("body-parser");
-
 const app = express();
 app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: true }));
+
 // get all rides
 app.get('/',pool.getallrides);
 // get single rides
