@@ -1,23 +1,23 @@
 import React from 'react';
-// import './Style.css';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import './Home.css'
-import Menu from './menu';
-class App extends React.Component {
+
+class Profile extends React.Component {
 
     render() {
         return (
             <div>
-            <Menu />
-            <body className="logon">
+     
+             <body className="logon">
 
-                {/* <div className="topnav" id="myTopnav">
-                    <a href="./homepage.html" className="">Home</a>
-                    <a href="./userprofile.html" className="active">Profile</a>
-                    <a >Sign_Out
-                      <i className="fa fa-bars"></i>
+                 <div className="topnav" id="myTopnav">
+                    <Link to={'./'}  className="">Home</Link>
+                    <Link to={'./profile'} className="active">Profile</Link>
+                    <a style={{float:"right"}}>Sign_Out
+                      <i className="fa fa-bars" ></i>
                     </a>
-                </div> */}
-                <div>
+                </div> 
+                 <div>
 
                     <div className="row">
                         <div className="column" style={{ backgroundColor: "#aaa" }}>
@@ -53,4 +53,4 @@ class App extends React.Component {
             </div>        )
     }
 }
-export default App;
+export default Profile;

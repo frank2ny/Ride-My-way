@@ -5,7 +5,8 @@ function App(){
     return (
         <div id="login-box">
         <div class="left">
-          <h1>Log in</h1>        
+          <h2>Ride my way</h2>
+          <h1>Log in </h1>       
  
           <input type="text" name="email" placeholder="E-mail" />
           <input type="password" name="password" placeholder="Password" />
