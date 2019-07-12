@@ -11,7 +11,7 @@ const singleride=(req,res)=>{
     pool.query('SELECT * FROM rides WHERE id = $1', [id], (error, results) => {
       if (error) {
         throw error
-      }
+      }696
       
       res.status(200).json(results.rows)
     })
@@ -25,7 +25,7 @@ const offeride=(req,res)=>{
     if (error) {
       throw error
     }
-    res.status(201).send(`User added with ID: ${result.insertId}`)
+    res.status(201).send(`You offered a ride to : ${result.tolocation}`)
   })
 }
 
